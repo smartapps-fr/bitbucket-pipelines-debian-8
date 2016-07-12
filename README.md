@@ -4,3 +4,19 @@
 Docker image based on [Debian/Jessie](https://www.debian.org/releases/jessie/) (no `CMD` as it is overriden by *Bitbucket Pipelines*).
 
 More help in Bitbucket's [Confluence](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-beta-792496469.html).
+
+Sample `bitbucket-pipelines.yml`:
+
+```YAML
+image: smartapps/bitbucket-pipelines-php-mysql
+pipelines:
+  default:
+    - step:
+        script:
+          - service mysql start
+          - mysql -h localhost -u root -e "CREATE DATABASE test;"
+          - composer config -g github-oauth.github.com XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          - composer install --no-interaction --no-progress --prefer-dist
+          - npm install --no-spin
+          - gulp
+```
