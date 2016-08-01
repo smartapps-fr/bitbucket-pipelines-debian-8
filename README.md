@@ -16,7 +16,7 @@ pipelines:
     - step:
         script:
           - service mysql start
-          - mysql -h localhost -u root -e "CREATE DATABASE test;"
+          - mysql -h localhost -u root -p root -e "CREATE DATABASE test;"
           - composer config -g github-oauth.github.com XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
           - composer install --no-interaction --no-progress --prefer-dist
           - npm install --no-spin
