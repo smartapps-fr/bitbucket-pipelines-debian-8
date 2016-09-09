@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql.svg)](http://microbadger.com/images/smartapps/bitbucket-pipelines-php-mysql "Get your own image badge on microbadger.com")
+
 # bitbucket-pipelines-php-mysql
 
 [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines) [Docker](https://www.docker.com/) image based on [Debian/Jessie](https://www.debian.org/releases/jessie/) with [PHP](http://php.net/)/[MySQL](https://www.mysql.com) (and more !)
