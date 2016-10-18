@@ -23,5 +23,6 @@ RUN \
 
 RUN \
  curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
+ wget https://phar.phpunit.de/phpunit.phar && chmod +x phpunit.phar && mv phpunit.phar /usr/local/bin/phpunit &&\
  npm install --no-color --production --global gulp-cli webpack mocha grunt &&\
  rm -rf /root/.npm /root/.composer /tmp/* /var/lib/apt/lists/*
