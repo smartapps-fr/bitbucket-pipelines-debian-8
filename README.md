@@ -10,7 +10,7 @@ Docker image at [smartapps/bitbucket-pipelines-php-mysql](https://hub.docker.com
 
 ## Packages installed
 
- - `php5-cli`, `php5-sqlite`, `php5-mysqlnd`, `php5-mcrypt`, `php5-curl`, `php-gettext`, `php5-gd`, `php5-json`, `php5-intl`, `php5-xdebug`, `php5-imagick`, `php5-memcached`, `memcached`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `mysql-server`, `mysql-client`, `git`
+ - `php5-cli`, `php5-sqlite`, `php5-mysqlnd`, `php5-mcrypt`, `php5-curl`, `php-gettext`, `php5-gd`, `php5-json`, `php5-intl`, `php5-xdebug`, `php5-imagick`, `php5-memcached`, `memcached`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `git`
  - [Perl](https://www.perl.org/) 5.20.2
  - [Python](https://www.python.org/) 2.7 + 3.4
  - [MySQL](https://www.mysql.com/) 5.5.50 (user `root:root`)
