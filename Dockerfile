@@ -13,7 +13,7 @@ RUN \
  /usr/sbin/update-locale LANG=en_US.UTF-8 &&\
  echo "mysql-server mysql-server/root_password password root" | debconf-set-selections &&\
  echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections &&\
- apt-get -y --no-install-recommends install ca-certificates git php5-mysqlnd php5-cli php5-sqlite php5-mcrypt php5-curl php5-intl php-gettext php5-gd php5-imagick php5-xdebug imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl &&\
+ apt-get -y --no-install-recommends install ca-certificates git php5-mysqlnd php5-cli php5-sqlite php5-mcrypt php5-curl php5-intl php-gettext php5-gd php5-imagick php5-xdebug imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl php5-memcached memcached &&\
  curl -sL https://deb.nodesource.com/setup_4.x | bash - &&\
  apt-get -y --no-install-recommends install nodejs &&\
  apt-get autoclean && apt-get clean && apt-get autoremove
@@ -24,5 +24,6 @@ RUN \
 RUN \
  curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
  wget https://phar.phpunit.de/phpunit.phar && chmod +x phpunit.phar && mv phpunit.phar /usr/local/bin/phpunit &&\
+ wget http://codeception.com/codecept.phar && chmod +x codecept.phar && mv codecept.phar /usr/local/bin/codecept &&\
  npm install --no-color --production --global gulp-cli webpack mocha grunt &&\
  rm -rf /root/.npm /root/.composer /tmp/* /var/lib/apt/lists/*
