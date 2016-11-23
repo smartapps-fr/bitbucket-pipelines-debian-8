@@ -13,7 +13,7 @@ RUN \
  /usr/sbin/update-locale LANG=en_US.UTF-8 &&\
  echo "mysql-server mysql-server/root_password password root" | debconf-set-selections &&\
  echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections &&\
- apt-get -y --no-install-recommends install ca-certificates gnupg git php7.0-mysql php-cli php7.0-sqlite php7.0-mcrypt php7.0-curl php7.0-intl php7.0-gettext php7.0-json php7.0-geoip php7.0-apcu php7.0-gd php7.0-imagick php7.0-xdebug imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl php7.0-memcached memcached &&\
+ apt-get -y --no-install-recommends install ca-certificates gnupg git php7.0-mysql php-cli php7.0-sqlite php7.0-mcrypt php7.0-curl php7.0-intl php7.0-gettext php7.0-json php7.0-geoip php7.0-apcu php7.0-gd php7.0-imagick php7.0-xdebug php-xml imagemagick openssh-client wget curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl php7.0-memcached memcached &&\
  curl -sL https://deb.nodesource.com/setup_6.x | bash - &&\
  apt-get -y --no-install-recommends install nodejs &&\
  apt-get autoclean && apt-get clean && apt-get autoremove
