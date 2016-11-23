@@ -1,4 +1,4 @@
-![Microbadger badge](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql.svg)
+![Microbadger badge](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql:stretch.svg)
 
 # bitbucket-pipelines-php-mysql
 
