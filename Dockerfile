@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:jessie-slim
 MAINTAINER Damien Debin <damien.debin@smartapps.fr>
 
 ENV DEBIAN_FRONTEND noninteractive
