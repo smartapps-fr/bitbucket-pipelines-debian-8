@@ -11,7 +11,7 @@ Docker image at [smartapps/bitbucket-pipelines-php-mysql](https://hub.docker.com
 
 ## Packages installed
 
- - `php7.0-apcu`, `php7.0-cli`, `php7.0-curl`, `php7.0-gd`, `php7.0-geoip`, `php-gettext`, `php7.0-imagick`, `php7.0-intl`, `php7.0-json`, `php7.0-mcrypt`, `php7.0-memcached`, `php7.0-mysql`, `php7.0-sqlite`, `php7.0-xdebug`, `php7.0-xmlrpc`, `php-xml`, `php-zip`, `memcached`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `git`, `subversion`
+ - `php7.0-apcu`, `php7.0-cli`, `php7.0-curl`, `php7.0-gd`, `php7.0-geoip`, `php-gettext`, `php7.0-imagick`, `php7.0-intl`, `php7.0-json`, `php7.0-mbstring`, `php7.0-mcrypt`, `php7.0-memcached`, `php7.0-mysql`, `php7.0-sqlite`, `php7.0-xdebug`, `php7.0-xmlrpc`, `php-xml`, `php-zip`, `memcached`, `imagemagick`, `openssh-client`, `curl`, `gettext`, `zip`, `git`, `subversion`
  - [Perl](https://www.perl.org/) 5.24
  - [Python](https://www.python.org/) 2.7 & 3.5
  - [MySQL](https://www.mysql.com/) 5.6 (user `root:root`)
