@@ -1,4 +1,5 @@
-![Microbadger badge](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql.svg)
+[![Travis Build Status](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-php-mysql.svg?branch=master)](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-php-mysql)
+[![Microbadger badge](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql.svg)](https://microbadger.com/images/smartapps/bitbucket-pipelines-php-mysql)
 
 # bitbucket-pipelines-php-mysql
 
