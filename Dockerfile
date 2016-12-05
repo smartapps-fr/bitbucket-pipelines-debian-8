@@ -19,7 +19,8 @@ RUN \
  apt-get autoclean && apt-get clean && apt-get autoremove
 
 RUN \
- sed -ri -e "s/^variables_order.*/variables_order = \"EGPCS\"/g" /etc/php/7.0/cli/php.ini
+ sed -ri -e "s/^variables_order.*/variables_order=\"EGPCS\"/g" /etc/php/7.0/cli/php.ini &&\
+ echo "xdebug.max_nesting_level=250" >> /etc/php/7.0/mods-available/xdebug.ini
 
 RUN \
  curl -sSL https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
