@@ -42,6 +42,14 @@ A Docker image based on [Debian _Stretch_](https://www.debian.org/releases/stret
 
 ## Changelog
 
+### 0.3
+
+ - Adds Yarn, `subversion`, `php5-xmlrpc`, `php5-json`, `php5-geoip`, `php5-apcu`, `php5-xhprof`
+ - Replaces `wget` by `curl`
+ - CI with Travis
+ - Adjusts `xdebug.max_nesting_level` in `xdebug.ini`
+ - Uses *slim* variant for base Debian Docker image.
+
 ### 0.2
 
  - Adds Ruby, Grunt, Webpack, Mocha, Sqlite, PHPUnit, Memcached, Codeception
