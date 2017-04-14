@@ -14,8 +14,10 @@ RUN \
  echo "mysql-server mysql-server/root_password password root" | debconf-set-selections &&\
  echo "mysql-server mysql-server/root_password_again password root" | debconf-set-selections &&\
  apt-get -y --no-install-recommends install ca-certificates git subversion php5-mysqlnd php5-cli php5-sqlite php5-mcrypt php5-curl php5-intl php-gettext php5-json php5-geoip php5-apcu php5-gd php5-imagick php5-xdebug php5-xhprof php5-xmlrpc imagemagick openssh-client curl software-properties-common gettext zip mysql-server mysql-client apt-transport-https ruby python python3 perl php5-memcached memcached &&\
+ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &&\
+ echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &&\
  curl -sSL https://deb.nodesource.com/setup_4.x | bash - &&\
- apt-get -y --no-install-recommends install nodejs &&\
+ apt-get -y --no-install-recommends install nodejs yarn &&\
  apt-get autoclean && apt-get clean && apt-get autoremove
 
 RUN \
