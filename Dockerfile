@@ -26,7 +26,7 @@ RUN \
 
 RUN \
  curl -sSL https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/bin &&\
- curl -sSL https://phar.phpunit.de/phpunit.phar -o /usr/bin/phpunit  && chmod +x /usr/bin/phpunit  &&\
+ curl -sSL https://phar.phpunit.de/phpunit-5.7.phar -o /usr/bin/phpunit  && chmod +x /usr/bin/phpunit  &&\
  curl -sSL http://codeception.com/codecept.phar -o /usr/bin/codecept && chmod +x /usr/bin/codecept &&\
  npm install --no-color --production --global gulp-cli webpack mocha grunt &&\
  rm -rf /root/.npm /root/.composer /tmp/* /var/lib/apt/lists/*
