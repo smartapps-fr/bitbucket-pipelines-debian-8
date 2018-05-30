@@ -39,7 +39,7 @@ pipelines:
 
 ## Debian 9 _Stretch_
 
-A Docker image based on [Debian 9 _Stretch_](https://www.debian.org/releases/stretch/), PHP 7, MySQL 5.6, Node.js 6.x and Ruby 2.3 is available at (smartapps-fr/bitbucket-pipelines-debian-9)[https://github.com/smartapps-fr/bitbucket-pipelines-debian-9].
+A Docker image based on [Debian 9 _Stretch_](https://www.debian.org/releases/stretch/), PHP 7, MySQL 5.6, Node.js 6.x and Ruby 2.3 is available at [smartapps-fr/bitbucket-pipelines-debian-9](https://github.com/smartapps-fr/bitbucket-pipelines-debian-9).
 
 ## Changelog
 
