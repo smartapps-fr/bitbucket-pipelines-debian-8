@@ -1,4 +1,4 @@
-[![Travis Build Status](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-php-mysql.svg?branch=master)](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-php-mysql)
+[![Travis Build Status](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-debian-8.svg?branch=master)](https://travis-ci.org/smartapps-fr/bitbucket-pipelines-debian-8)
 [![Microbadger badge](https://images.microbadger.com/badges/image/smartapps/bitbucket-pipelines-php-mysql.svg)](https://microbadger.com/images/smartapps/bitbucket-pipelines-php-mysql)
 
 # bitbucket-pipelines-debian-8(-php-mysql)
